@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fast, easy and free converting pdf files">
+     <meta name="keywords" content="Fast, easy, free, converting, convert, pdf files, file">
+    <title>PDF Converter</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    
+    <header class="header">
+        <img src="./img/logo.png" alt="logo">
+        <p class="header__slogan">Easy and fast conversion of <span class="header__slogan-pdf">PDF</span> files</p>
+        <div class="header__lang">
+            <span class="header__lang-en">En</span>
+            <a href="./ua/index_ua.html" class="header__lang-ua">Ua</a>
+        </div>
+    </header>
+    
+    <section class="converter">
+        <h1 class="converter__title">PDF Converter</h1>
+        <p class="converter__formats">Supported formats: doc, docx, xls, xlsx, jpg, png, gif, svg</p>
+        <div class="converter__input" id="drop-zone">
+            <label class="converter__input-label" for="file">Select a File to convert</label>
+            <p class="converter__input-hint">or drag files to this field</p>
+            <div id="output"></div>
+        </div>
+        <form enctype="multipart/form-data" method="post" action="handler.php" class="converter__form">
+                <input type="file" name="file" class="converter__form-input" id="file" multiple>
+                <select name="formats" id="formats" class="converter__form-select">
+                    <option value="null" disabled selected>Save in...</option>
+                    <option value="doc">Doc</option>
+                    <option value="docx">Docx</option>
+                    <option value="xls">Xls</option>
+                    <option value="xlsx">Xlsx</option>
+                    <option value="jpg">Jpg</option>
+                    <option value="png">Png</option>
+                    <option value="gif">Gif</option>
+                    <option value="svg">Svg</option>
+                </select>
+                <input type="submit" value="Convert" class="converter__form-submit disabled" id="btnSubmit" disabled>
+        </form> 
+    </section>
+
+    <section class="how">
+        <h2 class="how__title">How it works</h2>
+        <p class="how__hint">Just three easy steps</p>
+
+        <div class="how__cards">
+
+            <div class="how__cards-item">
+                <img src="./img/upload.svg" alt="upload">
+                <p class="how__cards-item-content">
+                    Select the required file for conversion by clicking
+                    the "Select a File to convert" button or by dragging the 
+                    file into the highlighted field
+                </p>
+            </div>
+            <div class="how__cards-devider"></div>
+            <div class="how__cards-item">
+                <img src="./img/settings.svg" alt="settings">
+                <p class="how__cards-item-content">
+                    Select the format in which you want to save the file using
+                    the drop-down list "Save in..."
+                </p>
+            </div>
+            <div class="how__cards-devider"></div>
+            <div class="how__cards-item">
+                <img src="./img/download.svg" alt="settings">
+                <p class="how__cards-item-content">
+                    Just press the "Convert" button, the file will be
+                    converted after which it will be automatically 
+                    downloaded to your device
+                </p>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="footer__contacts">
+            <div class="footer__contacts-address">
+                <p>Aspose Pty Ltd, Suite 163, 79 Longueville Road,</p>
+                <p>Lane Cove, NSW, 2066, Australia.</p>
+                <p class="footer__contacts-phone">
+                    <img src="./img/call.svg" alt="phone">
+                     <a href="tel:+61280066987" class="footer__contacts-phone-link">+61 2 8006 6987</a>
+                </p>
+            </div>
+            <div class="footer__contacts-social">
+                <a href="https://www.facebook.com/" target="_blank"><img src="./img/logos-facebook.png" alt="fb"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="./img/logos-instagram.png" alt="insta"></a>
+                <a href="https://www.pinterest.ru/" target="_blank"><img src="./img/logos-pinterest.png" alt="pint"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="./img/logos-youtube.png" alt="youtube"></a>
+            </div>
+
+        </div>
+        <p class="footer__copyright">© Aspose Pty Ltd 2001-2021. All Rights Reserved</p>
+    </footer>
+
+<script src="./script/main.js"></script>
+</body>
+</html>
